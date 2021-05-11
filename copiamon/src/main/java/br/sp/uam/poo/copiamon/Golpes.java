@@ -7,16 +7,6 @@ public class Golpes {
     private String tipo;
     private int poder;
     
-    
-    public Golpes(String nome, String tipo, int poder){
-        setNome(nome);
-        setTipo(tipo);
-        setPoder(poder);
-
-    }
-
-    
-    
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -42,6 +32,14 @@ public class Golpes {
 
     public int getPoder() {
         return poder;
+    }
+    
+    
+    public Golpes(String nome, String tipo, int poder){
+        setNome(nome);
+        setTipo(tipo);
+        setPoder(poder);
+
     }
     
 }
