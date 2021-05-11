@@ -7,16 +7,26 @@ public class Golpes {
     private String tipo;
     private int poder;
     
-    public void setNome(String nome) {
-        this.nome = nome;
+    
+    public Golpes(String nome, String tipo, int poder){
+        setNome (nome);
+        setTipo(tipo);
+        setPoder(poder);
+
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    
+    
+    public void setNome(String novoNome) {
+        this.nome = novoNome;
     }
 
-    public void setPoder(int poder) {
-        this.poder = poder;
+    public void setTipo(String novoTipo) {
+        this.tipo = novoTipo;
+    }
+
+    public void setPoder(int novoPoder) {
+        this.poder = novoPoder;
     }
 
     
@@ -32,14 +42,6 @@ public class Golpes {
 
     public int getPoder() {
         return poder;
-    }
-    
-    
-    public Golpes(String nome, String tipo, int poder){
-        setNome(nome);
-        setTipo(tipo);
-        setPoder(poder);
-
     }
     
 }
