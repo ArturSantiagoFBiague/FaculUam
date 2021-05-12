@@ -9,16 +9,18 @@ public class Atributos extends Golpes {
     private String nome;
     private String elemento;
     private int vida;
+    private int poder;
     private int defesa;
     private int velocidade;
 
-    public Atributos(String umNome, String umTipo, int umPoder, String nome, String umElemento, int umaVida, int umaDefesa, int umaVelocidade) {
-        super(umNome, umTipo, umPoder);
-        this.nome = umNome;
-        this.elemento = umElemento;
-        this.vida = umaVida ;
-        this.defesa = umaDefesa;
-        this.velocidade = umaVelocidade;
+    public Atributos(String nomeGolpe, String tipoGolpe, int poderGolpe, String nomePokemon, String elementoPokemon, int vidaPokemon, int poderPokemon, int defesaPokemon, int velocidadePokemon) {
+        super(nomeGolpe, tipoGolpe, poderGolpe);
+        this.nome = nomePokemon;
+        this.elemento = elementoPokemon;
+        this.vida = vidaPokemon;
+        this.poder = poderPokemon;
+        this.defesa = defesaPokemon;
+        this.velocidade = velocidadePokemon;
     }
 
   
@@ -34,6 +36,10 @@ public class Atributos extends Golpes {
 
     public void setVida(int novaVida) {
         this.vida = novaVida;
+    }
+    
+    public void setPoder(int novoPoder) {
+        this.poder = novoPoder;
     }
 
     public void setDefesa(int novaDefesa) {
@@ -55,6 +61,10 @@ public class Atributos extends Golpes {
 
     public int getVida() {
         return vida;
+    }
+    
+    public int getPoder() {
+        return poder;
     }
 
     public int getDefesa() {
